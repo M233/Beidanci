@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/index_rv_item_height"
+    android:padding="@dimen/index_padding"
+    >
+    <!--缩略图-->
+    <ImageView
+        android:id="@+id/index_rv_item_thumbnail"
+        android:layout_width="115dp"
+        android:layout_height="95dp"
+        android:src="@drawable/at7"
+        android:scaleType="fitXY"
+        />
+    <!--标题-->
+    <TextView
+        android:id="@+id/index_rv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/index_rv_item_thumbnail"
+        android:layout_alignTop="@id/index_rv_item_thumbnail"
+        android:text="【和Emily一起练口语】no doubt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        />
+    <!--标签-->
+    <TextView
+        android:id="@+id/index_rv_item_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text=" 外媒精选"
+        android:layout_toRightOf="@id/index_rv_item_thumbnail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        />
+</RelativeLayout>

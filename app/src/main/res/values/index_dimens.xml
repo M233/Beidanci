@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="index_padding">10dp</dimen>
+    <dimen name="index_rv_item_height">110dp</dimen>
+    <dimen name="index_tool_bar_height">50dp</dimen>
+    <dimen name="index_tool_bar_icon_width">40dp</dimen>
+    <dimen name="index_tool_bar_icon_height">40dp</dimen>
+    <dimen name="index_rv_item_header_icon_height">40dp</dimen>
+    <dimen name="index_rv_item_header_icon_width">65dp</dimen>
+    <dimen name="index_index_rv_item_header_height">250dp</dimen>
+</resources>

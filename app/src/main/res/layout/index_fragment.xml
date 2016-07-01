@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/index_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.RecyclerView>
+    <!--搜索的框 上划出现-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/index_tool_bar_height"
+        android:background="#2196f3"
+        android:padding="@dimen/index_padding"
+        android:id="@+id/index_tool_bar"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/index_tool_bar_voice"
+            android:layout_width="@dimen/index_tool_bar_icon_width"
+            android:layout_height="@dimen/index_tool_bar_icon_height"
+            android:src="@drawable/index_tool_bar_voice_icon"
+            />
+        <EditText
+            android:id="@+id/index_tool_bar_write"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/index_tool_bar_voice"
+            android:layout_alignTop="@id/index_tool_bar_voice"
+            android:background="@drawable/index_tool_bar_write_bg"
+            android:singleLine="true"
+            android:hint="在此输入要翻译的文本"
+            android:gravity="center"
+            android:textColor="#cdcfd0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

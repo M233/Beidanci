@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Beidanci</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="query">查询</string>
+    <string name="record">记录</string>
+    <string name="word_book">单词本</string>
+    <string name="my">我的</string>
+    <string name="query_insert_hint">在此输入要翻译的文本</string>
+    <string name="auto_insert_1">自动</string>
+</resources>

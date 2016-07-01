@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <!--搜索栏-->
+    <LinearLayout
+        android:id="@+id/write_query_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/index_tool_bar_height"
+        android:layout_margin="@dimen/index_padding"
+        android:background="@drawable/index_rv_header_item_header_toolbar_bg"
+        android:visibility="visible"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/write_query_toolbar_voice"
+            android:layout_width="@dimen/index_tool_bar_icon_height"
+            android:layout_height="@dimen/index_tool_bar_icon_height"
+            android:src="@drawable/index_tool_bar_voice_icon4"
+            android:scaleType="centerInside"
+            />
+        <EditText
+            android:id="@+id/write_query_toolbar_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@null"
+            android:hint="在此输入要翻译的文本"
+            android:gravity="center"
+            android:textColor="#cdcfd0"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <!--搜索记录-->
+    <ListView
+        android:id="@+id/write_query_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/write_query_tool_bar"
+        android:layout_below="@id/write_query_tool_bar"
+        android:dividerHeight="1dp"
+        android:divider="#ccc"
+        >
+    </ListView>
+
+</RelativeLayout>

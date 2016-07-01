@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/index_index_rv_item_header_height">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/index_rv_item_header_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/index_tool_bar_height"
+        android:layout_margin="@dimen/index_padding"
+        android:background="@drawable/index_rv_header_item_header_toolbar_bg"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/index_rv_item_header_toolbar_voice"
+            android:layout_width="@dimen/index_tool_bar_icon_height"
+            android:layout_height="@dimen/index_tool_bar_icon_height"
+            android:src="@drawable/index_tool_bar_voice_icon4"
+            android:scaleType="centerInside"
+            />
+        <EditText
+            android:id="@+id/index_rv_item_header_toolbar_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@null"
+            android:hint="在此输入要翻译的文本"
+            android:gravity="center"
+            android:textColor="#cdcfd0"
+            />
+    </LinearLayout>
+</RelativeLayout>

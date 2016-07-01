@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="popup_window_width">180dp</dimen>
+    <dimen name="popup_window_height">30dp</dimen>
+    <dimen name="top_nav_bar_icon_size">40dp</dimen>
+
+    <dimen name="word_frame_padding">12dp</dimen>
+    <dimen name="word_charset_size_title">26sp</dimen>
+    <dimen name="word_charset_size">18sp</dimen>
+
+    <dimen name="write_query_padding">10dp</dimen>
+</resources>

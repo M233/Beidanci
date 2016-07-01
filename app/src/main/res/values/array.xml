@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="book_word_sort_method">
+        <item >时间  </item>
+        <item >组  </item>
+        <item >乱序  </item>
+    </string-array>
+</resources>

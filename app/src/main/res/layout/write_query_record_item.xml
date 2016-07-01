@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/write_query_padding"
+    >
+    <!--搜索内容-->
+    <TextView
+        android:id="@+id/write_query_record_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        />
+    <!--搜索结果-->
+    <TextView
+        android:id="@+id/write_query_record_item_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        />
+</LinearLayout>

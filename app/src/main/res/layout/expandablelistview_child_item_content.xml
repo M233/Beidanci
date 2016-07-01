@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:paddingTop="7dp"
+    android:paddingLeft="35dp"
+    android:paddingBottom="7dp"
+    android:paddingRight="10dp"
+    >
+	<LinearLayout 
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:background="@drawable/shape_gray_oval"
+	    >
+	    <TextView 
+	        android:id="@+id/fragment_book_word_expandable_list_view_item_content_child_item_index"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#9e9e9e"
+	        android:textSize="20sp"
+	        />
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="vertical"
+	    android:layout_marginLeft="5dp"
+	    >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+			android:id="@+id/fragment_book_word_expandable_list_view_item_content_child_item_wrap"
+	        >
+	        <!-- 内容 -->
+	        <TextView
+		        android:id="@+id/fragment_book_word_expandable_list_view_item_content_child_item_content"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="23sp"
+		        android:textColor="#9e9e9e"
+				android:singleLine="true"
+	        	/>
+	        <!-- 结果 -->
+	        <TextView
+	            android:id="@+id/fragment_book_word_expandable_list_view_item_content_child_item_result"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="20sp"
+		        android:layout_marginLeft="5dp"
+		        android:textColor="#9e9e9e"
+				android:singleLine="true"
+	            />
+	    </LinearLayout>
+	    <!-- 底部边框 -->
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="#9e9e9e" 
+	        />
+	</LinearLayout>
+</LinearLayout>

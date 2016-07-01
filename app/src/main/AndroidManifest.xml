@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.admim.beidanci"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication"
+        >
+        <!--主Activity-->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--语音Activity-->
+        <activity android:name=".VoiceActivity">
+            <intent-filter >
+                <action android:name="2333aa"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 单词详情 -->
+        <activity
+            android:name=".WordInfoActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <!-- 搜索记录后台 -->
+        <service
+            android:name=".SearchRecordService"
+            >
+        </service>
+        <!-- 单词本后台 -->
+        <service
+            android:name=".BookWordService"
+            >
+        </service>
+        <!--WebActivity-->
+        <activity
+            android:name=".WebActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <!--手动输入查询-->
+        <activity
+            android:name=".WriteQueryActivity"
+            android:launchMode="singleTop"
+            >
+        </activity>
+    </application>
+
+</manifest>
